@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <body>
+    <form method="POST">
+      <label for="name">Name:</label>
+      <select id="name" name="name">
+        {% for name in names %}
+          <option value="{{ name }}">{{ name }}</option>
+        {% endfor %}
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

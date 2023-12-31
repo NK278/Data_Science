@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for name in names %}
+          <tr>
+            <td>{{ name[0] }}</td>
+            <td>{{ name[1] }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
